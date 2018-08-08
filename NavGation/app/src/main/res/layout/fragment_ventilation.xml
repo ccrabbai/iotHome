@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAE3"
+    tools:context="com.example.android.navgation.VentilationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/fan_btn_on"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/amber_on"
+                android:layout_marginBottom="46dp"
+                android:background="@drawable/bg_color"
+                android:layout_gravity="center"
+                android:text="@string/on"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:fontFamily="georgia"
+                android:textStyle="italic"/>
+            <Button
+                android:id="@+id/fan_btn_off"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/amber_on"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_color"
+                android:layout_gravity="center"
+                android:text="@string/off"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:fontFamily="georgia"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+            <ImageView
+                android:id="@+id/fan_image_on"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/fan_on"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:visibility="invisible" />
+
+            <!--Additional Fan-->
+            <ImageView
+                android:id="@+id/fan_image_off"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/fan_off"
+                android:layout_gravity="center"
+                android:scaleType="center" />
+
+        </RelativeLayout>
+
+            </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a7a9ef"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:fontFamily="georgia"
+            android:textSize="12sp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#7e7e7e"
+            android:textAllCaps="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="4dp"
+            android:layout_weight="2"/>
+
+        <ProgressBar
+            android:id="@+id/fan_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="5"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:layout_marginTop="0dp"
+            android:background="#DFDFC6"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a7a9ef"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#a7a9ef"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/state"
+            android:fontFamily="georgia"
+            android:textSize="12sp"
+            android:layout_weight="2"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#7e7e7e"
+            android:textAllCaps="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#a7a9ef"
+            android:layout_weight="4"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/tell_fan_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff888"
+            android:layout_centerInParent="true"
+            >
+
+            <ProgressBar
+                android:id="@+id/secondBar"
+                style="?android:attr/progressBarStyle"
+                android:indeterminate="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <RadioButton
+                android:id="@+id/radio_btn_fan_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/on_mode"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="georgia"
+                android:clickable="false"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_btn_fan_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/off_mode"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="georgia"
+                android:clickable="false"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_btn_fan_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_mode"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="georgia"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "177144803788",
+    "firebase_url": "https://navgation-456b5.firebaseio.com",
+    "project_id": "navgation-456b5",
+    "storage_bucket": "navgation-456b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177144803788:android:721525b4df689ea7",
+        "android_client_info": {
+          "package_name": "com.example.android.navgation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177144803788-bpi51b768j56irgmtjfl6gfvaj6sv3bp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.navgation",
+            "certificate_hash": "c1bdda26f14a75cb7b01ef2287edfb019bb9a36f"
+          }
+        },
+        {
+          "client_id": "177144803788-pq3h3fhpj7i1tbfm19u3qs42pol82hd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClKVZfRcytJGT8dtjhVe_Qf3Nr66cFCVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177144803788-pq3h3fhpj7i1tbfm19u3qs42pol82hd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=">>> TeamWonderful">
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tell_home_status"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/light"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Light"/>
+        <item
+            android:id="@+id/ventilation"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Ventilation"/>
+        <item
+            android:id="@+id/temperature"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Temperature"/>
+    </group>
+
+    <item android:title="Links">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.android.navgation.TemperatureFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1.6"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/temp"
+            android:layout_margin="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURRENT STATE"
+                android:fontFamily="georgia"
+                android:textSize="12sp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#7e7e7e"
+                android:textAllCaps="true"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="georgia"
+                android:paddingTop="4dp"
+                android:text="25DEGREE.C : NORMAL"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#7e7e7e"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/temp_progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="30"
+                android:layout_marginTop="0dp"
+                android:background="#DFDFC6"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
